@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true"
+    android:clickable="true"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+        <LinearLayout
+            android:background="?android:attr/selectableItemBackground"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <ImageView
+                android:padding="5dp"
+                android:id="@+id/feedProductIMG"
+                android:layout_weight=".01"
+                android:layout_width="100dp"
+                android:minWidth="100dp"
+                android:maxWidth="100dp"
+                android:layout_height="100dp"
+                />
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_weight=".99"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <com.beardedhen.androidbootstrap.AwesomeTextView
+                    android:id="@+id/feedProductTitle"
+                    android:layout_weight=".33"
+
+                    android:text="Maggi 200gm Packet"
+                    android:gravity="start"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <com.beardedhen.androidbootstrap.AwesomeTextView
+                    android:id="@+id/feedProductShortDesc"
+                    android:gravity="start"
+                    android:layout_weight=".33"
+                    android:text="100INR"
+                    android:textSize="10dp"
+                    android:layout_width="match_parent"
+                    android:textAlignment="textStart"
+                    android:layout_height="wrap_content" />
+                <com.beardedhen.androidbootstrap.AwesomeTextView
+                    android:id="@+id/feedProductPrice"
+                    android:gravity="start"
+                    android:layout_weight=".33"
+                    android:text="100INR"
+                    android:textSize="15dp"
+                    android:layout_width="match_parent"
+                    android:textAlignment="textStart"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+</RelativeLayout>

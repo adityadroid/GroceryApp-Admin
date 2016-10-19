@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_weight=".1"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/edit_seller_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Seller Name"
+                            android:inputType="textPersonName"
+                            android:maxLines="1"
+                            android:padding="8dp"
+                            android:singleLine="true"
+                            android:textSize="12dp"
+                            android:textColor="@color/colorPrimaryDark"
+
+                            android:textColorHint="@color/colorAccent">
+                        </EditText>
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/edit_seller_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Mobile"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:padding="8dp"
+                            android:singleLine="true"
+                            android:textSize="12dp"
+                            android:textColor="@color/colorPrimaryDark"
+
+                            android:textColorHint="@color/colorAccent">
+                        </EditText>
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/edit_seller_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Email"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:padding="8dp"
+                            android:singleLine="true"
+                            android:textSize="12dp"
+                            android:textColor="@color/colorPrimaryDark"
+
+                            android:textColorHint="@color/colorAccent">
+                        </EditText>
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/edit_seller_address1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Address Line 1"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:padding="8dp"
+                            android:singleLine="true"
+                            android:textSize="12dp"
+                            android:textColor="@color/colorPrimaryDark"
+
+                            android:textColorHint="@color/colorAccent">
+                        </EditText>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/edit_seller_address2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Address Line 2"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:padding="8dp"
+                            android:singleLine="true"
+                            android:textSize="12dp"
+                            android:textColor="@color/colorPrimaryDark"
+
+                            android:textColorHint="@color/colorAccent">
+                        </EditText>
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="match_parent"
+            android:layout_weight=".9"
+            app:bootstrapSize="md"
+
+
+            android:id="@+id/edit_seller_button"
+            app:bootstrapText="Update Details"
+
+            app:bootstrapBrand="primary"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <com.crystal.crystalpreloaders.widgets.CrystalPreloader
+        android:visibility="gone"
+        android:id="@+id/progress_bar_edit_seller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        app:crs_pl_fg_color="@color/colorAccent"
+        app:crs_pl_style="line_scale"
+        app:crs_pl_size="small"/>
+</RelativeLayout>
+

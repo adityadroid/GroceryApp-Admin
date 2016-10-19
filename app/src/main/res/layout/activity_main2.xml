@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="1"
+    android:orientation="vertical"
+    tools:context="aditya.grocery.admin.MainActivity">
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/add_new_product_main"
+        android:layout_margin="5dp"
+        android:layout_weight=".2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Add New Product"
+        app:bootstrapBrand="primary"
+        />
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/edit_product_main"
+        android:layout_margin="5dp"
+        android:layout_weight=".2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Edit Products"
+        app:bootstrapBrand="primary"
+
+        />
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/orders_main"
+        android:layout_margin="5dp"
+        android:layout_weight=".2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Orders"
+        app:bootstrapBrand="primary"
+
+        />
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/sellers_main"
+        android:layout_margin="5dp"
+        android:layout_weight=".2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Add Sellers"
+        app:bootstrapBrand="primary"
+
+        />
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/edit_sellers_main"
+        android:layout_margin="5dp"
+        android:layout_weight=".2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="View And Edit Sellers"
+        app:bootstrapBrand="primary"
+
+        />
+
+
+
+
+</LinearLayout>

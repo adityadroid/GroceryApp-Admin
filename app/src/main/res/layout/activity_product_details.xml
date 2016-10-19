@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_weight=".1"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/product_name_edit_product"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Product Name"
+                            android:inputType="textPersonName"
+                            android:maxLines="1"
+                            android:padding="8dp"
+                            android:singleLine="true"
+                            android:textSize="12dp"
+                            android:textColor="@color/colorPrimaryDark"
+
+                            android:textColorHint="@color/colorAccent">
+                        </EditText>
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/price_edit_product"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Price"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:padding="8dp"
+                            android:singleLine="true"
+                            android:textSize="12dp"
+                            android:textColor="@color/colorPrimaryDark"
+
+                            android:textColorHint="@color/colorAccent">
+                        </EditText>
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/description_edit_product"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Description"
+                            android:inputType="textPersonName"
+                            android:maxLines="1"
+                            android:padding="8dp"
+                            android:singleLine="true"
+                            android:textSize="12dp"
+                            android:textColor="@color/colorPrimaryDark"
+
+                            android:textColorHint="@color/colorAccent">
+                        </EditText>
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/quantity_edit_product"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Quantity"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:padding="8dp"
+                            android:singleLine="true"
+                            android:textSize="12dp"
+                            android:textColor="@color/colorPrimaryDark"
+
+                            android:textColorHint="@color/colorAccent">
+                        </EditText>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Spinner
+                        android:id="@+id/categories_edit_product"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </Spinner>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/seller_id_edit_product"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Seller ID"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:padding="8dp"
+                            android:singleLine="true"
+                            android:textSize="12dp"
+                            android:textColor="@color/colorPrimaryDark"
+
+                            android:textColorHint="@color/colorAccent">
+                        </EditText>
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <com.beardedhen.androidbootstrap.BootstrapButton
+                        android:layout_width="wrap_content"
+                        app:bootstrapSize="md"
+
+
+                        android:id="@+id/open_image_picker_edit_product"
+                        app:bootstrapText="choose image"
+
+                        app:bootstrapBrand="primary"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/name_image_edit_product"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="match_parent"
+            android:layout_weight=".9"
+            app:bootstrapSize="md"
+
+
+            android:id="@+id/update_edit_product"
+            app:bootstrapText="Update Product"
+
+            app:bootstrapBrand="primary"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <com.crystal.crystalpreloaders.widgets.CrystalPreloader
+        android:visibility="gone"
+        android:id="@+id/progress_bar_edit_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        app:crs_pl_fg_color="@color/colorAccent"
+        app:crs_pl_style="line_scale"
+        app:crs_pl_size="small"/>
+</RelativeLayout>
+
